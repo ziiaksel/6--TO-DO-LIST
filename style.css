@@ -1,0 +1,289 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #352f5b; */
+  color: #fff;
+  /* background-image: linear-gradient(
+    to bottom,
+    #0c121c,
+    #001f50,
+    #002987,
+    #002bbc,
+    #1214eb
+  ); */
+  background: rgb(141,45,176);
+background: linear-gradient(90deg, rgba(141,45,176,1) 0%, rgba(47,47,161,1) 100%);
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  /* background-image: linear-gradient(to top, #352f5b, rgb(255, 255, 255, 0.19)); */
+}
+hr{
+  margin-bottom: 10px;
+    border: 3px solid #80808087;
+
+}
+.task {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.icon:hover {
+  font-size: 26px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.icon-star,
+.icon-trash {
+  opacity: 0.4;
+  font-size: 27px;
+}
+
+.icon-star:hover {
+  color: orange;
+  opacity: 1;
+  font-size: 29px;
+}
+
+.icon-trash {
+  margin-right: 10px;
+  font-size: 27px;
+}
+
+.icon-trash:hover {
+  color: rgb(255, 242, 217);
+  font-size: 29px;
+  opacity: 1;
+}
+
+.icon-check {
+  color: rgb(243, 58, 58);
+  font-size: 24px;
+}
+.icon-check:hover{
+  color: rgb(10, 177, 41);
+  cursor:pointer;
+}
+
+/* h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #a9a9a963;;
+} */
+
+form {
+  text-align: center;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 35vw;
+  font-size: 21px;
+  text-align: center;
+  border-radius: 10px;
+  background: transparent;
+
+}
+::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+all: unset;
+}
+.icon-plus-square {
+  font-size: 40px;
+  margin-left: 20px;
+  position: relative;
+  
+  border-radius: 10px;
+
+}
+
+
+.icon-plus-square:hover {
+  font-size: 43px;
+  transition: 0.2s;
+  color: rgb(160, 250, 205);
+}
+
+.ali {
+  color: red;
+}
+
+/* for javascript */
+
+.dn {
+  display: none;
+}
+
+.icon-heart {
+  font-size: 23px;
+  color: rgb(255, 102, 102);
+}
+
+.icon-heart:hover {
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.finish {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+.orange {
+  color: orange;
+  opacity: 1;
+}
+.upload{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}   
+/*-----------
+quotes section
+-----------
+*/
+/* center the blockquote in the page */
+.blockquote-wrapper {
+  display: flex;
+  height: 60vh;
+  padding: 0 20px;
+
+}
+.anim{
+  animation: mymove 2s 1;
+}
+@keyframes mymove{
+0% {transform: translate(100vw);}
+100% {transform: translate(0vw);}
+}
+
+/* Blockquote main style */
+.blockquote {
+   position: relative;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 800;
+   color: #ffffff;
+   padding: 30px 0;
+   width: 100%;
+   max-width: 500px;
+   z-index: 1;
+   margin: 80px auto;
+   align-self: center;
+   border-top: solid 1px;
+   border-bottom: solid 1px;
+   top: 30px;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+   position: relative;
+   color: #FFFFFF;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 1;
+   margin: 0;
+}
+
+/* Blockquote left/right double quotes */
+.blockquote::before{
+  position: absolute;
+  content: "“";
+  color: rgba(255, 255, 255, 1);
+  font-size: 10rem;
+  line-height: 0;
+  left: 30px;
+}
+.blockquote:after {
+   position: absolute;
+   content: "”";
+   color: rgba(255, 255, 255, 1);
+   font-size: 10rem;
+   line-height: 0;
+   /* bottom: -21px; */
+   margin-top: 50px;
+   right: 30px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+   .blockquote h1 {
+       font-size: 60px;
+  }
+
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+   position: relative;
+   color: #292a2b;
+   font-size: 1.4rem;
+   font-weight: normal;
+   line-height: 1;
+   margin: 0;
+   padding-top: 20px;
+   z-index: 1;
+}
+/* buttor genearte random quotes */
+.myButton {
+	background-color:#7892c266;
+	border-radius:28px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:7px 9px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+  left: 62px;
+    position: relative;
+   
+}
+/* tobe fixed add m */
+.genrate-button{
+  margin: 40px auto;
+}
+.genrate-button p{
+  color: rgb(104 16 254 / 22%);
+}
+
+button:hover {
+	background-color:#ff9900;
+}
+.box-buttom{
+display: flex;
+}
